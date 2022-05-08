@@ -1,0 +1,7 @@
+https://www.freva.com/how-to-fix-cannot-currently-show-the-desktop-on-raspberry-pi/
+
+https://fishpoint.tistory.com/3468
+
+https://wiki.seeedstudio.com/4-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115/
+
+https://ddangeun.tistory.com/108
