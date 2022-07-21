@@ -1,4 +1,4 @@
-int Analog0 = 2;
+int Analog0 = A0;
 
 void setup() {
   Serial.begin(9600);
