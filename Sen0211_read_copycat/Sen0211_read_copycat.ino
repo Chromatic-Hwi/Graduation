@@ -1,9 +1,7 @@
 void setup() {
-  
   Serial.begin(9600);
-  //analogReference(INTERNAL);
-  //analogReference(INTERNAL1V1); //solo Arduino Mega
-}
+  //pinMode(ANalog0, INPUT);
+  }
 
 void loop() {
   
