@@ -16,8 +16,8 @@ void loop() {
   Serial.print(Watt, 3);
   Serial.println("W");
   
-  
   //Serial.println(Watt, 3);
+  delay(1000);
     }
 
 
@@ -38,7 +38,7 @@ float get_ampere()
     delay(1);
     }
     Sum=Sum * 2;
-    Current = sqrt(Sum / N)/10;
+    Current = sqrt(Sum / N);
     return(Current);
   }
   
