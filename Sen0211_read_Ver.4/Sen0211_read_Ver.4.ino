@@ -21,15 +21,15 @@ void loop() {
   I = I_sum / 100;
   Watt = Watt_sum / 100;
 
-  /*
+  
   Serial.print("Current: ");
   Serial.print(I, 3);
   Serial.print("A  |  Power: ");
   Serial.print(Watt, 3);
   Serial.println("W");
-  */
-  Serial.println(Watt, 3);
   
+  //Serial.println(Watt, 3);
+  //Serial.println(analogRead(A0));
     }
 
 
