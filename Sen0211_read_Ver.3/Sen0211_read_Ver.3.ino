@@ -9,6 +9,7 @@ void loop() {
   float I = get_ampere();
   float Watt = I * 220.0;
 
+  //Serial.println(analogRead(A0));
   
   Serial.print("Current: ");
   Serial.print(I, 3);
@@ -17,7 +18,7 @@ void loop() {
   Serial.println("W");
   
   //Serial.println(Watt, 3);
-  delay(1000);
+  //delay(1000);
     }
 
 
