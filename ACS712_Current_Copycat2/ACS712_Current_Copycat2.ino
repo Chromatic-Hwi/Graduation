@@ -9,7 +9,7 @@ void loop() {
   float volt = analogRead(A0) * (5.0 / 1024);
   float current = -(volt - 2.5) * (CURRENT / 2);
   float power = current * 220;
-  
+  /*
   Serial.print("volt :\t");
   Serial.print(volt);
   Serial.print("  |  current :\t");
@@ -17,5 +17,7 @@ void loop() {
   Serial.print("  |  power :\t");
   Serial.print(power);
   Serial.println();
+  */
+  Serial.println(power);
   delay(10);
 }

@@ -6,15 +6,22 @@ brate = 9600
 cdm = "power"
 
 serial = serial.Serial(port, baudrate=brate, timeout=None)
-#print(serial.name,"\n")
 
 db = MySQLdb.connect("localhost", "hwi", "20191223", "testdb")
 curs = db.cursor()
 
+Data_Cycle = {"Sec":100, "Min":6000}
+Time="Sec"
+
 while True:
-    line = str(serial.readline())[2:-5]
-    IValue=float(line[9:14])
-    WValue=float(line[-7:-1])
-    #print(line)
-    #curs.execute("INSERT INTO Power (value) VALUES (%f)", WValue)
-    print(IValue, WValue, "\n")
+    value_list=[]
+    for _ in range(Data_Cycle[Time]):
+        try:
+            value = float(str(serial.readline())[2:-5])
+            value_list.append(value)
+        except TypeError:
+            pass
+        except ValueError:
+            pass
+    max_value = max(value_list)
+    print(max_value)
